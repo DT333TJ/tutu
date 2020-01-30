@@ -25,7 +25,7 @@ module.exports = {
   css: {
     loaderOptions: {
       sass: {
-        data: `
+        prependData: `
           @import "~@/style/index.scss";
         `
       }

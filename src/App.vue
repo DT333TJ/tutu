@@ -9,24 +9,24 @@
 </template>
 
 <style lang="scss">
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: $color-text-sub
-}
+  #app {
+    font-family: 'Avenir', Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-align: center;
+    color: $color-text-sub
+  }
 
-#nav {
-  padding: 30px;
+  #nav {
+    padding: 30px;
 
-  a {
-    font-weight: bold;
-    color: $color-text-sub;
+    a {
+      font-weight: bold;
+      color: $color-text-sub;
 
-    &.router-link-exact-active {
-      color: #42b983;
+      &.router-link-exact-active {
+        color: #42b983;
+      }
     }
   }
-}
 </style>

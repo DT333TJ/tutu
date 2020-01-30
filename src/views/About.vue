@@ -32,7 +32,7 @@
         if (value) {
           console.log(value)
           this.selectValue = value
-          this.$router.push(`/test${value}`)
+          // this.$router.push(`/test${value}`)
         }
       }
     },
@@ -40,7 +40,14 @@
 </script>
 
 <style lang="scss" scoped>
-  .about-title {
-    color: $color-text-sub
+  .about {
+    .about-title {
+      color: $color-text-sub;
+      margin-right: 10px
+    }
+
+    /deep/ .el-input__inner, /deep/ .el-select__caret {
+      color: $color-text-sub
+    }
   }
 </style>
