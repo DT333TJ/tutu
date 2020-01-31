@@ -14,4 +14,30 @@ $color-text-b: #333;
 $font-size-small: 12px;
 $font-size-medium: 16px;
 $font-size-large: 18px;
-$font-size-large-x: 28px
+$font-size-large-x: 28px;
+
+
+// sidebar
+$menuText:#bfcbd9;
+$menuActiveText:#409EFF;
+$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+
+$menuBg:#304156;
+$menuHover:#263445;
+
+$subMenuBg:#1f2d3d;
+$subMenuHover:#001528;
+$sideBarWidth: 210px;
+
+
+// 导出变量对象
+:export {
+  menuText: $menuText;
+  menuActiveText: $menuActiveText;
+  subMenuActiveText: $subMenuActiveText;
+  menuBg: $menuBg;
+  menuHover: $menuHover;
+  subMenuBg: $subMenuBg;
+  subMenuHover: $subMenuHover;
+  sideBarWidth: $sideBarWidth;
+}
