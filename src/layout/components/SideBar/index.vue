@@ -53,6 +53,7 @@
   import variables from '@/style/variables.scss'
 
   export default {
+    name: 'SideBar',
     data() {
       return {
         activeMenu: '1-1'
@@ -78,10 +79,13 @@
     bottom: 0;
     left: 0;
     z-index: 1001;
-    overflow: hidden;
-
-    .scrollbar-wrapper {
-      overflow-x: hidden !important
-    }
+    overflow: hidden
   }  
+</style>
+
+<style lang="scss">
+  .scrollbar-wrapper {
+    overflow-x: hidden !important;
+    height: 100% !important
+  }
 </style>
