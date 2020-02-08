@@ -36,7 +36,7 @@
     width: 20px;
     height: 20px;
   }
-  .hamburger.is-active {
+  .is-active {
     transform: rotate(180deg);
   }
 </style>

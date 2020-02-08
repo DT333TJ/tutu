@@ -32,7 +32,7 @@
         if (value) {
           console.log(value)
           this.selectValue = value
-          // this.$router.push(`/test${value}`)
+          this.$router.push(`/test/test${value}`)
         }
       }
     },
@@ -41,6 +41,8 @@
 
 <style lang="scss" scoped>
   .about {
+    margin-left: 20px;
+
     .about-title {
       color: $color-text-sub;
       margin-right: 10px

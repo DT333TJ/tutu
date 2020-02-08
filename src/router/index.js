@@ -4,6 +4,10 @@ import VueRouter from 'vue-router'
 /* Layout */
 import Layout from '@/layout/index.vue'
 
+/* Router Modules */
+import testRouter from './modules/test'
+
+
 Vue.use(VueRouter)
 
 const routes = [
@@ -21,10 +25,13 @@ const routes = [
         path: '/about',
         name: 'about',
         component: () => import('@/views/About.vue')
-      }
-    ]
-  }
+      },
+    ],
+  },
+  testRouter
 ]
+
+console.log(routes)
 
 const router = new VueRouter({
   mode: 'history',
