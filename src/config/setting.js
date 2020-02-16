@@ -4,7 +4,7 @@
  */
 const pageName = 'test'
 let testPageConfig = [
-  { page: `${pageName}0208`, code: '0208' }
+  { page: `${pageName}0216`, code: '0216' }
 ]
 
 

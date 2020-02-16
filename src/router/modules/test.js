@@ -12,11 +12,11 @@ const testRouter = {
   },
   children: [
     {
-      path: 'test0208',
-      component: () => import('@/views/test/test0208'),
-      name: 'test0208',
+      path: 'test0216',
+      component: () => import('@/views/test/test0216'),
+      name: 'test0216',
       meta: {
-        title: 'test0208'
+        title: 'test0216'
       }
     }
   ]
