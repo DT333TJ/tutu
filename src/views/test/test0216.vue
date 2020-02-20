@@ -3,17 +3,26 @@
     <h1>This is an test0216 page</h1>
     <p>学习使用防抖节流知识</p>
     <section class="test-section" id="mouseOver" @mouseover.passive="_mouseOver1"></section>
+    <p>当前用户的IP：{{userIP}}</p>
   </div>
 </template>
 
 <script>
-  import { _debounce } from '@/utils'
+  import { _debounce ,  _getUserIP} from '@/utils'
 
   export default {
     data() {
       return {
-        count: 0
+        count: 0,
+        userIP: ''
       }
+    },
+    mounted() {
+      let that = this
+      _getUserIP(function(ip) {
+        console.log(ip)
+        that.userIP = ip
+      })
     },
     methods: {
       _mouseOver() {

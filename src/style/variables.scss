@@ -1,5 +1,5 @@
 /**
- * @Desc css全局变量
+ * @Desc css全局变量，通过定义样式，导出变量动态控制
  */
 // 背景颜色
 $color-bg: #ffffff;
@@ -20,7 +20,7 @@ $font-size-large-x: 28px;
 // sidebar
 $menuText:#bfcbd9;
 $menuActiveText:#409EFF;
-$subMenuActiveText:#f4f4f5; // https://github.com/ElemeFE/element/issues/12951
+$subMenuActiveText:#f4f4f5;
 
 $menuBg:#304156;
 $menuHover:#263445;
@@ -39,5 +39,5 @@ $sideBarWidth: 210px;
   menuHover: $menuHover;
   subMenuBg: $subMenuBg;
   subMenuHover: $subMenuHover;
-  sideBarWidth: $sideBarWidth;
+  sideBarWidth: $sideBarWidth
 }
