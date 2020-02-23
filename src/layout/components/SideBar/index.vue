@@ -12,10 +12,11 @@
         :unique-opened="false"
         :active-text-color="variables.menuActiveText"
         :collapse-transition="false"
+        @select='_select'
         mode="vertical">
         <el-menu-item index="2">
           <i class="el-icon-menu"></i>
-          <span slot="title">导航二</span>
+          <span slot="title">展示页</span>
         </el-menu-item>
         <el-menu-item index="3">
           <i class="el-icon-document"></i>
@@ -48,7 +49,15 @@
       isCollapse() {
         return false
       }
-    }
+    },
+    methods: {
+      _select(i, path) {
+        console.log(i)
+        console.log(path)
+        if (i === '2') this.$router.push('/demo')
+        else this.$router.push('/home')
+      }
+    },
   }
 </script>
 

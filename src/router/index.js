@@ -26,6 +26,11 @@ const routes = [
         name: 'about',
         component: () => import('@/views/About.vue')
       },
+      {
+        path: '/demo',
+        name: 'demo',
+        component: () => import('@/views/Demo.vue')
+      },
     ],
   },
   testRouter
