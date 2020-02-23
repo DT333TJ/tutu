@@ -10,20 +10,30 @@
 </template>
 
 <script>
-// @ is an alias to /src
-// import HelloWorld from '@/components/HelloWorld.vue'
-
-export default {
-  name: 'demo',
-  components: {
-    // HelloWorld
-  },
-  data() {
-    return {
-      theme: ''
+  export default {
+    name: 'demo',
+    components: {
+      // HelloWorld
+    },
+    data() {
+      return {
+        theme: ''
+      }
+    },
+    computed: {
+      defalutTheme() {
+        return this.$store.state.settings.theme
+      }
+    },
+    watch: {
+      defalutTheme: {
+        handler(val) {
+          this.theme = val
+        },
+        immediate: true
+      }
     }
-  },
-}
+  }
 </script>
 
 <style lang="scss">

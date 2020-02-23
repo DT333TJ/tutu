@@ -5,6 +5,9 @@ Vue.use(Vuex)
 
 export default new Vuex.Store({
   state: {
+    settings: {
+      theme: '#036403'
+    }
   },
   mutations: {
   },
